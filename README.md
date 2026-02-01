@@ -16,7 +16,8 @@
 - [Tech Stack](#tech-stack)
 - [Quick Start](#quick-start)
 
-## 🏗️ Architecture Overview
+
+## 📋 Architecture Overview
 
 ```mermaid
 graph TD
@@ -31,8 +32,6 @@ graph TD
     style A fill:#ff9999
     style B fill:#ffcc99
     style C fill:#99ccff
-
-
     style D fill:#99ff99
     style E fill:#ffff99
     style F fill:#ff99ff
