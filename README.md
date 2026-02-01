@@ -31,19 +31,7 @@ graph TD
     style A fill:#ff9999
 
 
-##  HIPAA Compliance Features
-✅ Encryption at Rest: Azure Storage Service Encryption (SSE) with customer-managed keys
-✅ Encryption in Transit: TLS 1.2+ for all data movement
-✅ PII Masking: Automated masking for patient identifiers (MRN, SSN, Names)
-✅ Audit Logging: Azure Monitor tracks all data access with immutable logs
-✅ Access Control: Role-Based Access Control (RBAC) with Row-Level Security (RLS) in Snowflake
-✅ Data Lineage: Azure Purview integration for complete data governance
-✅ Breach Detection: Anomaly detection on data access patterns
-    style B fill:#ffcc99
-    style C fill:#99ccff
-    style D fill:#99ff99
-    style E fill:#ffff99
-    style F fill:#ff99ff
+
 
 
 ## 🎯 Impact Metrics
