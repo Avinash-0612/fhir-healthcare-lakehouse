@@ -1,1 +1,40 @@
+name: 'fhir_healthcare_lakehouse'
+version: '1.0.0'
+config-version: 2
 
+profile: 'healthcare_profile'  # Configure in ~/.dbt/profiles.yml
+
+model-paths: ["dbt/models"]
+analysis-paths: ["dbt/analyses"]
+test-paths: ["dbt/tests"]
+seed-paths: ["dbt/seeds"]
+macro-paths: ["dbt/macros"]
+snapshot-paths: ["dbt/snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  fhir_healthcare_lakehouse:
+    staging:
+      +materialized: view
+      +schema: staging
+      +tags: ["staging", "daily"]
+      
+    marts:
+      +materialized: table
+      +schema: marts
+      +tags: ["marts", "analytics"]
+      
+    core:
+      +materialized: incremental
+      +schema: core
+      +tags: ["core", "hipaa"]
+
+vars:
+  batch_date: '{{ run_started_at.strftime("%Y-%m-%d") }}'
+  
+on-run-start:
+  - "INSERT INTO audit.log (run_started) VALUES (CURRENT_TIMESTAMP())"
