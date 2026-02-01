@@ -1,0 +1,30 @@
+[
+  {
+    "resourceType": "Patient",
+    "patient_id": "1001",
+    "name_masked": "J. Smith",
+    "birthDate": "1985-05-15",
+    "age_group": "Adult",
+    "gender": "male",
+    "zip_region": "100",
+    "mrn_masked": "***1001",
+    "ssn_masked": "***-**-6789",
+    "ingestion_timestamp": "2026-02-01T13:50:31.200915",
+    "data_source": "FHIR-R4-API",
+    "compliance_flag": "HIPAA-MASKED"
+  },
+  {
+    "resourceType": "Patient",
+    "patient_id": "1002",
+    "name_masked": "M. Johnson",
+    "birthDate": "1990-08-22",
+    "age_group": "Adult",
+    "gender": "female",
+    "zip_region": "021",
+    "mrn_masked": "***1002",
+    "ssn_masked": "***-**-4321",
+    "ingestion_timestamp": "2026-02-01T13:50:31.200931",
+    "data_source": "FHIR-R4-API",
+    "compliance_flag": "HIPAA-MASKED"
+  }
+]
