@@ -31,7 +31,7 @@ graph TD
     style A fill:#ff9999
 
 
-## 🛡️ HIPAA Compliance Features
+##  HIPAA Compliance Features
 ✅ Encryption at Rest: Azure Storage Service Encryption (SSE) with customer-managed keys
 ✅ Encryption in Transit: TLS 1.2+ for all data movement
 ✅ PII Masking: Automated masking for patient identifiers (MRN, SSN, Names)
