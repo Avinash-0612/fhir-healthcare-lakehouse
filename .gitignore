@@ -1,1 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
 
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# dbt
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# Data files (don't commit patient data!)
+*.csv
+*.parquet
+*.json
+bronze/
+silver/
+gold/
+
+# Azure credentials
+azure_credentials.json
+config.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
